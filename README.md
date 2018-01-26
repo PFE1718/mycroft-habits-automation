@@ -32,7 +32,7 @@ You can find more technical details on the repository of each skill.
 
 ## How to install the skills?
 
-**COMMING SOON (hopefully):** direct installation within Mycroft with:
+**COMING SOON (hopefully):** direct installation within Mycroft with:
 > Hey Mycroft, install skill listener. Hey Mycroft, install...
 
 On a Linux environment with Mycroft installed you can install the skills using
@@ -59,7 +59,7 @@ After successfully installing the 3 skills and restarting Mycroft, the system sh
 
 Yes **you can!**
 
-**COMMING SOON:** A beautiful GUI to manage your habits
+**COMING SOON:** A beautiful GUI to manage your habits
 
 For now, if you know a bit about programming, you can dig a bit into the habits storage format which is:
 ```json
@@ -102,4 +102,4 @@ For now, if you know a bit about programming, you can dig a bit into the habits 
 - **"triggers"**: trigger(s) index(es) in the intent table (trigger base habits only)
 - **"time"**: time of the habit (time based habits only)
 - **"days"**: days when the habit occures (time based habits only)
-- **"inteval_max"**: the max interval in minutes between the habit time and the logs that were used to build the habits
+- **"interval_max"**: the max interval in minutes between the habit time and the logs that were used to build the habits (time based habits only)
