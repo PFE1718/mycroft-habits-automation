@@ -1,7 +1,5 @@
 # Habits automation system for Mycroft
 
-**/!\\** This project is still in development and some functionalities might not work entirely as expected.
-
 ## Presentation
 
 The habits automation system aims to detect the **user habits** when using [Mycroft](https://mycroft.ai/), and to offer automation of these identified habits.
@@ -15,7 +13,7 @@ Once that a habit has been identified, the user can choose between:
 - being given the **option to reproduce the habit**: every time the habit "trigger" is detected, Mycroft will ask the user if he/she wants to reproduce the habit this time
 - **not automating** the habit
 
-When it comes to "trigger based" habits, the user is free to chose the command to be used as trigger.
+When it comes to "trigger based" habits, the user is free to chose the command to be used as trigger. A command can only be the trigger of one habit.
 
 ## How does it work?
 
@@ -59,7 +57,9 @@ After successfully installing the 3 skills and restarting Mycroft, the system sh
 
 Yes **you can!**
 
-**COMING SOON:** A beautiful GUI to manage your habits
+**COMING SOON:** Habits management on [Mycroft Home](https://home.mycroft.ai)
+
+**COMING SOON:** A beautiful GUI to manage your habits for Linux
 
 For now, if you know a bit about programming, you can dig a bit into the habits storage format which is:
 ```json
