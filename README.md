@@ -40,9 +40,9 @@ On a Linux environment with Mycroft installed you can install the skills using
 source ~/.virtualenvs/mycroft/bin/activate
 
 # use msm to install the skills
-sudo /<PATH_TO_MYCROFT-CORE>/mycroft-core/msm/msm install https://github.com/PFE1718/mycroft-skill-listener
-sudo /<PATH_TO_MYCROFT-CORE>/mycroft-core/msm/msm install https://github.com/PFE1718/mycroft-automation-handler
-sudo /<PATH_TO_MYCROFT-CORE>/mycroft-core/msm/msm install https://github.com/PFE1718/mycroft-habit-miner-skill
+sudo /<PATH_TO_MYCROFT-CORE>/mycroft-core/msm/msm install https://github.com/PFE1718/PFE1718-skill-listener
+sudo /<PATH_TO_MYCROFT-CORE>/mycroft-core/msm/msm install https://github.com/PFE1718/PFE1718-automation-handler
+sudo /<PATH_TO_MYCROFT-CORE>/mycroft-core/msm/msm install https://github.com/PFE1718/PFE1718-habit-miner
 ```
 
 Don't forget to leave the virualenv with the command 
