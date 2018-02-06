@@ -39,6 +39,9 @@ On a Linux environment with Mycroft installed you can install the skills using
 # get into Mycroft virutalenv
 source ~/.virtualenvs/mycroft/bin/activate
 
+# upgrading pip
+pip install --upgrade pip
+
 # use msm to install the skills
 sudo /<PATH_TO_MYCROFT-CORE>/mycroft-core/msm/msm install https://github.com/PFE1718/PFE1718-skill-listener
 sudo /<PATH_TO_MYCROFT-CORE>/mycroft-core/msm/msm install https://github.com/PFE1718/PFE1718-automation-handler
@@ -53,53 +56,13 @@ when you are done!
 
 After successfully installing the 3 skills and restarting Mycroft, the system should start logging your activity and eventually offer you to automate habits after they are identified!
 
-## Can you register habits manually?
+## How to manage your habits?
 
-Yes **you can!**
+When you first reproduce a detected habit, Mycroft will ask you if this habit should be automatized. You can then choose between the 3 automation options.
+
+A dialog allows you to modify your habits' preferences later on. You can access it with the command:
+> Hey Mycroft, list my habits
 
 **COMING SOON:** Habits management on [Mycroft Home](https://home.mycroft.ai)
 
 **COMING SOON:** A beautiful GUI to manage your habits for Linux
-
-For now, if you know a bit about programming, you can dig a bit into the habits storage format which is:
-```json
-{
-    "intents": [
-        {
-            "parameters": {
-                "Application": "atom"
-            },
-            "name": "-4359987462241748114:LaunchDesktopApplicationIntent",
-            "last_utterance": "open atom"
-        },
-        {
-            "parameters": {
-                "Application": "firefox"
-            },
-            "name": "-4359987462241748114:LaunchDesktopApplicationIntent",
-            "last_utterance": "open firefox"
-        }
-    ],
-    "trigger_type": "skill",
-    "automatized": 0,
-    "user_choice": true,
-    "triggers": [
-        0
-    ],
-    "time": "9:31",
-    "days": [
-        4,
-        5,
-        6
-    ],
-    "interval_max": "
-}
-```
-- **"intents"**: array containing the habit's intents
-- **"trigger_type"**: "skill" for trigger based habits, "time" otherwise
-- **"automatized"**: 0 for no automation, 1 for full automation, 2 for automation offer
-- **"user_choice"**: true if you write it yourself
-- **"triggers"**: trigger(s) index(es) in the intent table (trigger base habits only)
-- **"time"**: time of the habit (time based habits only)
-- **"days"**: days when the habit occures (time based habits only)
-- **"interval_max"**: the max interval in minutes between the habit time and the logs that were used to build the habits (time based habits only)
