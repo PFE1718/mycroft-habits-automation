@@ -18,9 +18,9 @@ When it comes to "trigger based" habits, the user is free to chose the command t
 ## How does it work?
 
 The habit automation system is composed of **3 Mycroft skills** working together:
-1. The [**skill-listener**](https://github.com/PFE1718/mycroft-skill-listener), that logs the user activity. It is also  responsible for launching the 2 other skills when needed.
-2. The [**habit-miner**](https://github.com/PFE1718/mycroft-habit-miner-skill), that extracts the habits of the user from the logs.
-3. The [**automation-handler**](https://github.com/PFE1718/mycroft-automation-handler), that interacts with the user to offer habits automation. It is also responsible for launching the different commands of the automated habits.
+1. The [**listener**](https://github.com/PFE1718/PFE1718-skill-listener), that logs the user activity. It is also  responsible for launching the 2 other skills when needed.
+2. The [**habit-miner**](https://github.com/PFE1718/PFE1718-habit-miner), that extracts the habits of the user from the logs.
+3. The [**automation-handler**](https://github.com/PFE1718/PFE1718-automation-handler), that interacts with the user to offer habits automation. It is also responsible for launching the different commands of the automated habits.
 
 The logs are **stored locally** and never sent to a third party server for privacy reasons.
 
@@ -38,9 +38,6 @@ On a Linux environment with Mycroft installed you can install the skills using
 ```bash
 # get into Mycroft virutalenv
 source ~/.virtualenvs/mycroft/bin/activate
-
-# upgrading pip
-pip install --upgrade pip
 
 # use msm to install the skills
 sudo /<PATH_TO_MYCROFT-CORE>/mycroft-core/msm/msm install https://github.com/PFE1718/PFE1718-skill-listener
@@ -63,6 +60,4 @@ When you first reproduce a detected habit, Mycroft will ask you if this habit sh
 A dialog allows you to modify your habits' preferences later on. You can access it with the command:
 > Hey Mycroft, list my habits
 
-**COMING SOON:** Habits management on [Mycroft Home](https://home.mycroft.ai)
-
-**COMING SOON:** A beautiful GUI to manage your habits for Linux
+[SmartCroft](https://github.com/PFE1718/SmartCroftApp), an Electron GUI to manage your habits is available for Linux! For now it allows you to modify your habits settings and to register new trigger based habits.
