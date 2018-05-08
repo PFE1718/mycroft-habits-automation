@@ -30,7 +30,7 @@ You can find more technical details on the repository of each skill.
 
 ## How to install the skills?
 
-**COMING SOON (hopefully):** direct installation within Mycroft with:
+Direct installation within Mycroft with:
 > Hey Mycroft, install skill listener. Hey Mycroft, install...
 
 On a Linux environment with Mycroft installed you can install the skills using
